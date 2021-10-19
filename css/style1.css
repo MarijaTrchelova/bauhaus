@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Cabin', sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+
+
+
+}
+.background{
+  background-image: url("../img/Path5.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.path{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 800px;
+}
+/*Shapes*/
+.square {
+  width: 30px;
+  height: 30px;
+  background: #F0C800;
+  margin-right: 2em;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #21409A;
+  margin-right: 2em;
+}
+
+.circle {
+  width: 30px;
+  height: 30px;
+  background: #E63228;
+  border-radius: 50%
+}
+
+/*Header part*/
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+.shapes, .nav-links {
+  display: flex;
+}
+
+.shapes {
+  flex: 1;
+}
+
+.nav-links {
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-link {
+  color: #4f4f4f;
+  font-size: 1.125em;
+  font-weight: bold;
+  text-decoration: none;
+  padding-left: 3.125em;
+}
+a:hover{
+  color: #21409A
+}
+
+/*Hero Part*/
+.mainpart {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  min-height: 90vh;
+  align-items: center;
+}
+
+.intaduction {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: 6em;
+  font-weight: bold;
+  color: #E63228;
+}
+
+.intro-text p {
+  font-size:
+  margin-top: 0.20em;
+  margin-left: 0.50em;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.cover {
+  flex: 1;
+}
+
+.cover img {
+  height: 70vh;
+  position: absolute;
+  right: 70px;
+  top: 120px;
+  animation: drop 2s ease;
+}
+
+
+
+/*Content Part*/
+/*History*/
+.history-content {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding-top: 13em;
+}
+
+.walter {
+  flex: 1;
+}
+
+.walter img {
+  height: 80vh;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 50%;
+}
+
+.col h3 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #E63228;
+  padding-top: 3.2em;
+}
+
+.col p {
+  font-size: 1.125em;
+  margin-top: 10px;
+  color: #4f4f4f;
+  line-height: 1.4em;
+}
+
+/*Concept*/
+.square1 {
+  width: 130px;
+  height: 130px;
+  background: #21409A;
+  position: relative;
+  top: 50px;
+  left: 130px;
+
+}
+
+.square2 {
+  width: 130px;
+  height: 130px;
+  background: #E63228;
+  position: relative;
+  top: 20px;
+  left: 210px;
+
+}
+
+.square3 {
+  width: 130px;
+  height: 130px;
+  background: #F0C800;
+  position: relative;
+  left: 160px;
+
+}
+
+.content-shape {
+  flex: 1;
+}
+
+.quote {
+  width: 80%;
+  margin: auto;
+  padding-top: 15em;
+  text-align: center;
+}
+
+.quote h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 2em;
+  font-weight: 500;
+  color: #E63228;
+}
+
+.typographyimg {
+  flex: 1;
+}
+
+.typographyimg img {
+  height: 90vh;
+}
+.typographytext{
+  margin-top: -1.5em;
+}
+.inspo-con {
+  padding-top: 5em;
+}
+
+.inspo {
+  text-align: center;
+}
+
+.grid {
+  padding: 1em;
+}
+
+.grid-inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5em;
+}
+
+.item {
+  flex: 1 1 100%;
+  padding: 0.5em;
+}
+
+.item-inner {
+  background-size: cover;
+  background-image: url("../img/futura.png");
+  padding-top: calc(100% / (20/25));
+}
+
+.item:nth-child(2) .item-inner {
+  background-image: url("../img/bauhaus2.jpg");
+}
+
+.item:nth-child(3) .item-inner {
+  background-image: url("../img/bauhaus3.jpg");
+}
+
+.item:nth-child(4) .item-inner {
+  background-image: url("../img/bauhaus4.jpg");
+}
+
+/*Footer*/
+footer {
+  background-color: #21409A;
+  margin-top:8em;
+}
+.icons{
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.fab{
+  padding-right: 1.875em;
+}
+footer>p{
+  color: white;
+  text-align: center;
+  padding-bottom: 1em;
+}
+@keyframes drop {
+ 0%{
+   opacity: 0;
+   transform: rotateY(-50px);
+ }
+ 100%{
+   opacity: 1;
+   transform: rotateY(0px);
+ }
+}
+@media screen and (min-width: 480px) {
+  .item {
+    flex: 1 1 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    flex: 1 1 33.333%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .item {
+    flex: 1 1 25%;
+  }
+}
+/*Tablet*/
+@media screen and (max-width: 800px){
+  header{
+    flex-direction: column;
+    margin-top: 1em;
+
+  }
+  .background{
+    background-image: none;
+  }
+  .shapes{
+    margin-bottom: 1em;
+    margin-left: 30px;
+  }
+  .mainpart{
+    flex-direction: column;
+    margin-top: 100px;
+
+  }
+  .nav-links {
+    justify-content: center;
+    margin-left: 30px;
+
+  }
+  .mainpart{
+    margin-top: 4em;
+  }
+  .cover img{
+    height: 50vh;
+    margin-top: 170px;
+  margin-right: 10px;
+  }
+  .intro-text h1 {
+    font-size: 6em;
+    font-weight: 700;
+    color: #E63228;
+  }
+
+  .intro-text p {
+    margin-top: 0.25em;
+    color: #4f4f4f;
+    text-align: center;
+  }
+  .history-content{
+    flex-direction: column;
+    margin-top: -100px;
+
+  }
+}
+/*Mobile*/
+@media screen and (max-width: 480px){
+  header{
+    flex-direction: column;
+    margin-top: 1em;
+
+  }
+  .background{
+    background-image: none;
+  }
+  .shapes{
+    margin-bottom: 1em;
+    margin-left: 60px;
+  }
+  .mainpart{
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 90px;
+
+  }
+  .intro-text{
+    margin-left: -90px;
+  }
+  .nav-links {
+    justify-content: center;
+    margin-left: -30px;
+
+  }
+  .cover img{
+    height: 50vh;
+    margin-top: 150px;
+    margin-right: 10px;
+  }
+  .history-content{
+    flex-direction: column;
+    margin-top: -100px;
+
+  }
+  .col h3 {
+
+    padding-top: 2em;
+  }
+  .walter img {
+    height: 50vh;
+  }
+  .typographyimg img {
+    height: 50vh;
+  }
+}
